@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>static html page</title>
+    <script src="./js/socket.io.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.13.1/qs.min.js"></script>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <div id="contenter">
+        <div id="banner">Chat Room--- <span id="room-name">room 5</span></div>
+        <div id="main">
+            <div id="content">
+                <div class="chat-messages"></div>
+            </div>
+            <div id="links">
+                User List:
+                <ul id="users"></ul>
+            </div>
+        </div>
+         <div id="footer">
+        <form id="chat-form">
+            <input type="text" id="msg" placeholder="Please input here......" required autocomplete="off" />
+            <button class="btn">Send</button>
+            <span class="chatImgText">Emoji</span>
+            <span id="chatColor">Choose font color</span>
+            <input type="color" value="#00ff00" name="chatColor" />
+        </form>
+        <div id="chatImg">
+            <ul id="imgLists">
+            </ul>
+        </div>
+    </div>
+    </div>
+   
+    <script src="./js/main.js"></script>
+     <script src="./js/emoji-script.js"></script>
+    <script src="./js/send-script.js"></script>
+</body>
+</html>

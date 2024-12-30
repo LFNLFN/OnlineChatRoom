@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+ul li {
+    list-style: none;
+}
+
+#contenter {
+    text-align: center;
+    padding: 15px;
+    width: 1000px;
+    height: 800px;
+    border: 1px solid #000;
+    position: relative;
+    margin: 0 auto;
+    font-size: 28px;
+    color: orange;
+    font-weight: 600;
+}
+
+#banner,#footer {
+    text-align: center;
+    border: 1px solid #000;
+    background-color: #ffcc33;
+    width: 1000px;
+    height: 50px;
+    clear: both;
+    margin: 10px 0px;
+    color: #000;
+}
+
+#main {
+    width: 1000px;
+    height: 650px;
+    background-color: #9cf;
+}
+
+#content {
+    text-align: center;
+    width: 780px;
+    height: 100%;
+    border: 1px solid #000;
+    float: left;
+    color: #000;
+    font-size: 16px;
+    text-align: left;
+    overflow: scroll;
+}
+
+#links {
+    text-align: center;
+    border: 1px solid #000;
+    width: 205px;
+    height: 100%;
+    margin-left: 10px;
+    float: left;
+    color: #000;
+}
+
+#link ul {
+    list-style: none;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: left;
+    margin-left: 15px;
+}
+
+#main::after {
+    content: '';
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+
+#msg {
+    width: 500px;
+    height: 35px;
+}
+
+#chat-form button {
+    background-color: green;
+    color: white;
+    height: 38px;
+    width: 100px;
+}
+
+#chatColor {
+    margin-left: 50px;
+    font-size: 18px;
+}
+
+.chatImgText {
+    width: 50px;
+    height: 30px;
+    font-size: 18px;
+    background-color: beige;
+    border: 2px solid black;
+    margin-left: 30px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+#chatImg {
+    display: none;
+    width: 325px;
+    height: 200px;
+    border: 1px solid red;
+    position: absolute;
+    bottom: 82px;
+    right: 80px;
+    background-color: white;
+}
+
+#chatImg ul {
+    list-style: none;
+}
+
+#chatImg ul li {
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    float: left;
+}
+
+#chatImg ul li:hover {
+    background-color: gainsboro;
+}
+
+#errorInfo {
+    color: red;
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 30px;
+    display: none;
+}
